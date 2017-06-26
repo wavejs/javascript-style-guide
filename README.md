@@ -1,2 +1,1 @@
-# javascript-style-guide
-WAVE.js Javascript Style Guide
+# Wave.js Javascript Style Guide
