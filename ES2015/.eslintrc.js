@@ -7,6 +7,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "rules": {
+        "brace-style": ["error", "1tbs", { allowSingleLine: true }],
         "indent": [
             "error",
             4
@@ -15,6 +16,8 @@ module.exports = {
             "error",
             "unix"
         ],
+        "no-alert": "warn",
+        "no-array-constructor": "error",
         "quotes": [
             "error",
             "single"
