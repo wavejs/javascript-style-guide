@@ -10,7 +10,8 @@ module.exports = {
         "brace-style": ["error", "1tbs", { allowSingleLine: true }],
         "indent": [
             "error",
-            4
+            2,
+            { SwitchCase: 1 }
         ],
         "linebreak-style": [
             "error",
