@@ -27,6 +27,8 @@ module.exports = {
             "error",
             "last"
         ],
+        "curly": "error",
+        "eqeqeq": "error",
         "indent": [
             "error",
             2,
@@ -38,6 +40,14 @@ module.exports = {
         ],
         "no-alert": "warn",
         "no-array-constructor": "error",
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false
+            }
+        ],
+        "no-var": "error",
+        "object-curly-spacing": ["warn", "always"],
         "quotes": [
             "error",
             "single"
