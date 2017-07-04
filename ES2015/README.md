@@ -18,7 +18,7 @@ const cities = ['seoul', 'tokyo', 'bangkok'];
 
 ### Comma
 
-- `Object`, `Array` 등을 선언 또는 할당시 multiline으로 작성하는 경우 마지막 속성에도 `.`를 추가해야 합니다.
+- `Object`, `Array` 등을 선언 또는 할당시 multiline으로 작성하는 경우 마지막 속성에도 `,`를 추가해야 합니다.
 
 > 소스 버전관리 도구를 사용하는 경우, `trailling comma`가 없는 경우, 단순 `comma`의 추가도 변경내역으로 표시되어, 불필요한 이력을 발생시킬 수 있습니다.
 
