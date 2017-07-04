@@ -7,7 +7,26 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "rules": {
-        "brace-style": ["error", "1tbs", { allowSingleLine: true }],
+        "brace-style": [
+            "error",
+            "1tbs",
+            { allowSingleLine: true }
+        ],
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
         "indent": [
             "error",
             2,
@@ -27,6 +46,9 @@ module.exports = {
             "error",
             "always"
         ],
-        "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }]
+        "space-before-function-paren": [
+            "error",
+            { "anonymous": "always", "named": "never" }
+        ]
     }
 };
