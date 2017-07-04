@@ -89,8 +89,8 @@ const cities = ['seoul', 'tokyo', 'bangkok'];
 ### Whitespace
 
 - 들여쓰기는 `2 spaces`를 사용합니다.
-- `Callback Hell`, `Split panels` 등에 적합합니다.  
-  처음에 4를 사용하다가 2로 바꿀때 낯설긴 했지만 익숙해지는데 오래 걸리지는 않았습니다. :)
+
+> `Callback Hell`, `Split panels` 등에 적합합니다. 4에서 2로 바꿀때 낯설긴 했지만 익숙해지는데 오래 걸리지는 않았습니다. :)
 
 ```javascript
 
@@ -173,4 +173,4 @@ function getCity() {
   return 'seoul';
 }
 
-``` 
+```
