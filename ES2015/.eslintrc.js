@@ -38,6 +38,9 @@ module.exports = {
             "error",
             "unix"
         ],
+        "newline-per-chained-call": ["error", {
+            "ignoreChainWithDepth": 2
+        }],
         "no-alert": "warn",
         "no-array-constructor": "error",
         "no-use-before-define": [
