@@ -159,6 +159,26 @@ console.log(cities);
 
 ```
 
+### Newline
+
+- 메서드 체이닝(method chainging)을 사용하는 경우, 줄바꿈을 이용해 구분합니다.
+- 줄바꿈시에도 들여쓰기 규칙은 그대로 유지합니다. (2spaces)
+
+> git diff 사용 시 변경된 부분을 명확히 파악할 수 있습니다.
+
+```javascript
+
+// bad
+$('body').append('<div/>').style({ maginTop: '1px' }).show();
+
+// good
+$('body')
+  .append('<div/>')
+  .style({ maginTop: '1px' })
+  .show();
+
+```
+
 ### Object
 
 - `single-line` 으로 Object를 작성하는 경우, `curly-brace` 안쪽으로 `1 space`씩을 포함시키도록 합니다.
