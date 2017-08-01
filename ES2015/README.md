@@ -179,6 +179,64 @@ $('body')
 
 ```
 
+- 다음 구문뒤에는 줄바꿈을 추가해 구분합니다.
+  * directive ('use strict' 등)
+  * const, let, var
+- 각 구문들을 연속으로 사용 가능하지만, 이외의 경우에는 줄바꿈을 추가해야합니다.
+
+```javascript
+
+// bad
+'use strict'
+const myCity = 'seoul';
+
+// good
+'use strict'
+
+const myCity = 'seoul';
+
+// bad
+let myCity = 'seoul';
+myCity = 'tokyo';
+
+// good
+let myCity = 'seoul';
+
+myCity = 'seoul';
+
+// good
+'use strict';
+'use asm';
+
+// good
+const country = 'korea';
+let myCity = 'seoul';
+
+myCity = 'seoul';
+
+```
+
+- `return` 문 사용시 반드시 줄바꿈 후 사용합니다.
+
+> pros. 명확한 구분을 통해 가독성을 높일 수 있습니다.
+
+```javascript
+
+// bad
+const destoryCity = (cityName) => {
+  destory(cityName);
+  return `You destroied ${cityName}!!`;
+};
+
+// good
+const destoryCity = (cityName) => {
+  destory(cityName);
+
+  return `You destroied ${cityName}!!`;
+};
+
+```
+
 ### Object
 
 - `single-line` 으로 Object를 작성하는 경우, `curly-brace` 안쪽으로 `1 space`씩을 포함시키도록 합니다.
