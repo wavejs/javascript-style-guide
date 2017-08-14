@@ -50,6 +50,7 @@ module.exports = {
             }
         ],
         "no-var": "error",
+        "no-unused-vars": "warn",
         "object-curly-spacing": ["warn", "always"],
         "padding-line-between-statements": ["error",
             {
