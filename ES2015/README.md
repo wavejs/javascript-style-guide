@@ -159,6 +159,27 @@ console.log(cities);
 
 ```
 
+- 사용되지 않는 변수는 삭제하거나 주석 처리를 합니다.
+- Rules: `no-unused-vars`
+
+> 사용되지 않는 변수는 불필요한 공간을 차지하며, 코드 해석에 혼동되는 요소가 됩니다.
+
+```javascript
+// bad
+function getCityName() {
+  const city = 'seoul'; // warning!
+
+  return 'seoul';
+}
+
+// good
+function getCityName() {
+  // const city = 'seoul'; // annotation or delete
+
+  return 'seoul';
+}
+```
+
 ### Newline
 
 - 메서드 체이닝(method chainging)을 사용하는 경우, 줄바꿈을 이용해 구분합니다.
