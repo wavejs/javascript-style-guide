@@ -180,6 +180,20 @@ function getCityName() {
 }
 ```
 
+- 동일한 모듈을 중복으로 import 하지 않도록 주의합니다.
+
+```javascript
+// bad
+import Bus from './Cargo';
+...
+import Bus from './Cargo';
+...
+
+// good
+import Bus from './Cargo';
+...
+```
+
 ### Newline
 
 - 메서드 체이닝(method chainging)을 사용하는 경우, 줄바꿈을 이용해 구분합니다.

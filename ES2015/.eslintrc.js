@@ -43,6 +43,8 @@ module.exports = {
         }],
         "no-alert": "warn",
         "no-array-constructor": "error",
+        "no-debugger": "error",
+        "no-duplicate-imports": "error",
         "no-use-before-define": [
             "error",
             {
