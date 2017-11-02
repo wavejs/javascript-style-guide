@@ -345,7 +345,7 @@ case 'bangkok':
   // ...
   break;
 default:
-  // ...  
+  // ...
 }
 
 // good
@@ -360,7 +360,7 @@ switch (city) {
     // ...
     break;
   default:
-    // ...  
+    // ...
 }
 
 ```
@@ -391,4 +391,44 @@ function getCity() {
   return 'seoul';
 }
 
+```
+
+### JSDoc comments
+
+- 지정된 Type을 통해 일관된 문자열을 사용합니다.
+
+> `preferType` 지정은 `JSDoc` 문서의 `@param`을 기준으로 선정하였습니다.
+
+```javascript
+// bad
+/**
+ * Get City
+ *
+ * @param {Boolean} a
+ * @param {String} b
+ * @param {Number} c
+ * @param {object} d
+ * @param {array} e
+ * @param {function} f
+ * @param {any} g
+ */
+function getCity(a, b, c, d, e, f, g) {
+  console.log('Bad!');
+}
+
+// good
+/**
+ * Get City
+ *
+ * @param {boolean} a
+ * @param {string} b
+ * @param {number} c
+ * @param {Object} d
+ * @param {Array} e
+ * @param {Function} f
+ * @param {*} g
+ */
+function getCity(a, b, c, d, e, f, g) {
+  console.log('Good!');
+}
 ```

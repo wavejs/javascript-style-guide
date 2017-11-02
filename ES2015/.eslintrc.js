@@ -92,6 +92,19 @@ module.exports = {
         "space-before-function-paren": [
             "error",
             { "anonymous": "always", "named": "never" }
+        ],
+        "valid-jsdoc": [
+            "warn", {
+                "preferType": {
+                    "Boolean": "boolean",
+                    "String": "string",
+                    "Number": "number",
+                    "object": "Object",
+                    "array": "Array",
+                    "function": "Function",
+                    "any": "*"
+                }
+            }
         ]
     }
 };
